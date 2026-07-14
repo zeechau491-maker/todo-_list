@@ -1,0 +1,79 @@
+<!Doctype html>
+<HTML>
+<style>
+    body {
+        background-color: #0f1c3f;
+        color: rgb(189, 189, 189);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    button {
+        margin: 6px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #17317e;
+        border: 1px solid #2b72bd;
+        color: rgb(189, 189, 189);
+    }
+
+    button:hover {
+        background-color: #2b72bd;
+        color: white;
+        cursor: pointer;
+    }
+
+    button.delete-btn {
+        background-color: #8b0000;
+        border: 1px solid #ff0000;
+    }
+
+    button.complete-btn {
+        background-color: #006400;
+        border: 1px solid #00ff00;
+    }
+
+    input {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #2b72bd;
+    }
+
+    #taskInput {
+        height: 30px;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #59668e;
+        width: 300px;
+    }
+
+    span.task-text {
+        width: 300px;
+        display: inline-block;
+    }
+</style>
+
+<body>
+    <header>
+        <H1>THIS IS A TO DO LIST</H1>
+    </header>
+    <form id="taskForm">
+        <input id="taskInput" type="text" placeholder="enter text"> </input>
+        <button ID="submitBtn"><i class="fa-solid fa-circle-plus"></i> Create</button>
+    </form>
+
+    <h2>To Do</h2>
+    <ul id="todo-list"></ul>
+
+    <h2>In Progress</h2>
+    <ul id="in-progress-list"></ul>
+
+    <h2>Done</h2>
+    <ul id="done-list"></ul>
+
+
+    <script src="todo.js"></script>
+    <script src="https://kit.fontawesome.com/0da2b0bf7a.js" crossorigin="anonymous"></script>
+</body>
+
+</HTML>
